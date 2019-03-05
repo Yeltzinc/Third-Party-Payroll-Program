@@ -38,7 +38,7 @@ string Person::getLastName()
 {
     return lastName;
 }
-int Person::getemployeeID()
+int Person::getEmployeeId()
 {
     return employeeID;
 }

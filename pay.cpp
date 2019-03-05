@@ -15,11 +15,11 @@ void readData(vector<Person>&employees)
     string firstName;
     string lastName;
     int employeeID;
-    string comapnyName;
+    string companyName;
     float hoursWorked;
     float payRate;
     //opens file input
-    ifstream input
+    ifstream input;
     input.open("input.txt");
     
     //reading file and copying it into person for amount of employees inside of the input.txt file.
@@ -37,7 +37,7 @@ void readData(vector<Person>&employees)
         //pushes back into vector
         employees.push_back(p);
     }
-    //saves vector size 
+    //saves vector size
     for(int i=0;i<employees.size();i++)
     {
         cout<<employees.at(i).fullName()<<endl;
